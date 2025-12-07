@@ -9,10 +9,10 @@ return {
                 variant = "main",      -- auto, main, moon, or dawn
                 dark_variant = "main", -- main, moon, or dawn
                 dim_inactive_windows = false,
-                -- disable_background = true,
-                -- 	disable_nc_background = false,
-                -- 	disable_float_background = false,
-                -- extend_background_behind_borders = false,
+                disable_background = true,
+                disable_nc_background = false,
+                disable_float_background = false,
+                extend_background_behind_borders = false,
                 styles = {
                     bold = true,
                     italic = false,

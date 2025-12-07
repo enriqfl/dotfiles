@@ -56,7 +56,7 @@ return {
             custom_surroundings = nil,
 
             -- Duration (in ms) of highlight when calling `MiniSurround.highlight()`
-            highlight_duration = 300,
+            highlight_duration= 300,
 
             -- Module mappings. Use `''` (empty string) to disable one.
             -- INFO:

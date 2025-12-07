@@ -121,17 +121,28 @@ return {
             },
             dashboard = {
                 enabled = true,
+                preset = {
+                header = [[
+                                                                                         
+                           ████ ██████           █████      ██                     
+                          ███████████             █████                             
+                          █████████ ███████████████████ ███   ███████████   
+                         █████████  ███    █████████████ █████ ██████████████   
+                        █████████ ██████████ █████████ █████ █████ ████ █████   
+                      ███████████ ███    ███ █████████ █████ █████ ████ █████  
+                     ██████  █████████████████████ ████ █████ █████ ████ ██████ 
+                ]],
+                },
                 sections = {
                     { section = "header" },
                     { section = "keys", gap = 1, padding = 1 },
                     { section = "startup" },
                     {
-                        section = "terminal",
-                        cmd = "ascii-image-converter ~/Downloads/wired.png -C -c",
-                        random = 15,
-                        pane = 2,
-                        indent = 15,
-                        height = 20,
+                        -- section = "terminal",
+                        -- cmd = "cat /home/enriqfl/Desktop/forTerm/wired_art.txt",
+                        -- pane = 2,
+                        -- indent = 15,
+                        -- height = 20,
                     },
                 },
             },
@@ -145,7 +156,7 @@ return {
 
             -- Snacks Picker
             { "<leader>pf", function() require("snacks").picker.files() end, desc = "Find Files (Snacks Picker)" },
-            { "<leader>pc", function() require("snacks").picker.files({ cwd = "~/dotfiles/nvim/.config/nvim/lua" }) end, desc = "Find Config File" },
+            { "<leader>pc", function() require("snacks").picker.files({ cwd = "/home/enriqfl/.config/nvim/lua" }) end, desc = "Find Config File" },
             { "<leader>ps", function() require("snacks").picker.grep() end, desc = "Grep word" },
             { "<leader>pws", function() require("snacks").picker.grep_word() end, desc = "Search Visual selection or Word", mode = { "n", "x" } },
             { "<leader>pk", function() require("snacks").picker.keymaps({ layout = "ivy" }) end, desc = "Search Keymaps (Snacks Picker)" },
